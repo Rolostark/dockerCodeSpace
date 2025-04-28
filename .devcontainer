@@ -1,1 +1,11 @@
-
+{
+  "name": "My Docker Environment",
+  "dockerFile": "../Dockerfile",  // Ruta al Dockerfile
+  "forwardPorts": [3000],         // Puertos a exponer
+  "postCreateCommand": "docker-compose up -d",  // Comando al iniciar
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker"]  // Extensión Docker para VS Code
+    }
+  }
+}
